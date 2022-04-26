@@ -18,30 +18,66 @@ namespace dotsnboxes
     /// </summary>
     public partial class Page2 : Page
     {
-        int turn = 3;
+        int turn = 1;
         int counter = 0;
         int inplay = 0;
+        Brush color = Brushes.Red;
         public Page2(int players)
         {
             InitializeComponent();
             inplay = players;
         }
 
-        private void dot_Click(object sender, MouseButtonEventArgs e)
+        public void turn_Change()
         {
-            Ellipse dot = e.Source as Ellipse;
-            dot.Fill = Brushes.Black;
-            if (counter == 0)
+            if (turn == 1)
             {
-                text.Text = dot.Name.Trim('_');
-                counter += 1;
+                color = Brushes.Red;
+                turn += 1;
             }
-            else if (counter == 1)
+            else if (turn == 2)
             {
-                int lineName = (int.Parse(dot.Name.Trim('_')) + int.Parse(text.Text)) / 2;
-                Rectangle line = (Rectangle)FindName("_" + lineName);
-                line.Fill = Brushes.Black;
-                counter -= 1;
+                color = Brushes.Blue;
+                turn += 1;
+            }
+            else if (turn == 3)
+            {
+                color = Brushes.Yellow;
+                turn += 1;
+            }
+            else
+            {
+                color = Brushes.Green;
+                turn = 1;
+            }
+            
+        }
+
+        private void line_Click(object sender, MouseButtonEventArgs e)
+        {
+            turn_Change();
+            Rectangle line = e.Source as Rectangle;
+            line.Fill = color;
+            check_Boxes();
+        }
+
+        public void check_Boxes()
+        {
+            int[] boxes = { 22, 24, 26 };
+
+            foreach(int b in boxes)
+            {
+                Rectangle top = (Rectangle)FindName("_" + (b - 21));
+                Rectangle left = (Rectangle)FindName("_" + (b - 1));
+                Rectangle right = (Rectangle)FindName("_" + (b + 1));
+                Rectangle bottom = (Rectangle)FindName("_" + (b + 21));
+                Rectangle box = (Rectangle)FindName("_" + (b));
+
+                if (top.Fill != Brushes.White && left.Fill != Brushes.White && right.Fill != Brushes.White && bottom.Fill != Brushes.White && box.Fill == Brushes.White)
+                {
+                    box.Fill = color;
+                    turn -= 1;
+                }
             }
         }
     }
