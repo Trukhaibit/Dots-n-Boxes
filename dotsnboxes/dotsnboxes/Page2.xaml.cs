@@ -21,36 +21,49 @@ namespace dotsnboxes
         int turn = 1;
         int counter = 0;
         int inplay = 0;
-        Brush color = Brushes.Red;
+        int rScore = 0;
+        int bScore = 0;
+        int gScore = 0;
+        int lScore = 0;
+        Brush color = Brushes.Crimson;
         public Page2(int players)
         {
             InitializeComponent();
             inplay = players;
+            text.Text = inplay.ToString();
         }
 
         public void turn_Change()
         {
+            if (turn == 0)
+            {
+                turn = inplay;
+            }
             if (turn == 1)
             {
-                color = Brushes.Red;
+                color = Brushes.Crimson;
                 turn += 1;
             }
             else if (turn == 2)
             {
-                color = Brushes.Blue;
+                color = Brushes.CornflowerBlue;
                 turn += 1;
             }
             else if (turn == 3)
             {
-                color = Brushes.Yellow;
+                color = Brushes.Gold;
                 turn += 1;
             }
             else
             {
-                color = Brushes.Green;
+                color = Brushes.LimeGreen;
                 turn = 1;
             }
-            
+            if (inplay == turn - 1)
+            {
+                turn = 1;
+            }
+
         }
 
         private void line_Click(object sender, MouseButtonEventArgs e)
@@ -77,6 +90,26 @@ namespace dotsnboxes
                 {
                     box.Fill = color;
                     turn -= 1;
+                    if (turn == 1)
+                    {
+                        rScore += 1;
+                        redScore.Text = rScore.ToString("00");
+                    }
+                    else if (turn == 2)
+                    {
+                        bScore += 1;
+                        blueScore.Text = bScore.ToString("00");
+                    }
+                    else if (turn == 3)
+                    {
+                        gScore += 1;
+                        goldScore.Text = gScore.ToString("00");
+                    }
+                    else if (turn == 4)
+                    {
+                        lScore += 1;
+                        limeScore.Text = lScore.ToString("00");
+                    }
                 }
             }
         }

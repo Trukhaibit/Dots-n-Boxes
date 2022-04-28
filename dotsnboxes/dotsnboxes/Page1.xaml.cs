@@ -27,5 +27,15 @@ namespace dotsnboxes
         {
             this.NavigationService.Navigate(new Page2(2));
         }
+
+        private void three_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page2(3));
+        }
+
+        private void four_Click(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page2(4));
+        }
     }
 }

@@ -203,6 +203,10 @@
                     <Ellipse HorizontalAlignment="Center" Height="10" VerticalAlignment="Center" Width="10" Fill="Black"/>
                 </WrapPanel>
                 <TextBlock x:Name="text" Height="24" Text="TextBlock" TextWrapping="Wrap" Width="57" Canvas.Left="43" Canvas.Top="48"/>
+                <TextBlock x:Name="redScore" Height="61" Canvas.Left="186.5" Canvas.Top="29.5" Text="00" TextWrapping="Wrap" Width="61" Background="#FFCC143C" Foreground="White" FontSize="36" TextAlignment="Center"/>
+                <TextBlock x:Name="blueScore" Height="61" Canvas.Left="308.5" Canvas.Top="29.5" Text="00" TextWrapping="Wrap" Width="61" Background="CornflowerBlue" Foreground="White" FontSize="36" TextAlignment="Center"/>
+                <TextBlock x:Name="goldScore" Height="61" Canvas.Left="430.5" Canvas.Top="29.5" Text="00" TextWrapping="Wrap" Width="61" Background="Gold" Foreground="White" FontSize="36" TextAlignment="Center"/>
+                <TextBlock x:Name="limeScore" Height="61" Canvas.Left="552.5" Canvas.Top="29.5" Text="00" TextWrapping="Wrap" Width="61" Background="LimeGreen" Foreground="White" FontSize="36" TextAlignment="Center"/>
             </Canvas>
         </Viewbox>
 

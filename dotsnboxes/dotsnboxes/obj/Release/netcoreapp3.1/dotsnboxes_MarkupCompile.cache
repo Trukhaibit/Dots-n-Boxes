@@ -1,20 +1,20 @@
 ﻿dotsnboxes
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\James\OneDrive\all\Desktop\Dots-n-Boxes-main\Dots-n-Boxes-main\dotsnboxes\dotsnboxes\obj\Debug\netcoreapp3.1\
+C:\Users\James\OneDrive\all\Desktop\Dots-n-Boxes-main\Dots-n-Boxes-main\dotsnboxes\dotsnboxes\obj\Release\netcoreapp3.1\
 dotsnboxes
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\James\OneDrive\all\Desktop\Dots-n-Boxes-main\Dots-n-Boxes-main\dotsnboxes\dotsnboxes\App.xaml
 31765690356
 
-7922769380
+5-1985056538
 192-1533232326
 MainWindow.xaml;Page1.xaml;Page2.xaml;
 
-False
+True
 

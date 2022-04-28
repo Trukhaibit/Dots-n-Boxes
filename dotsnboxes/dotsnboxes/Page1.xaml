@@ -12,12 +12,12 @@
         <TextBlock HorizontalAlignment="Center" Height="87" Text="Dots 'n' Boxes" TextWrapping="Wrap" VerticalAlignment="Center" Width="403" TextAlignment="Center" FontSize="36"/>
         <Rectangle HorizontalAlignment="Left" Height="44" Margin="293,252,0,0" Stroke="Black" VerticalAlignment="Top" Width="160"/>
         <Rectangle x:Name="_2Player" HorizontalAlignment="Left" Height="44" Margin="452,252,0,0" Stroke="Black" VerticalAlignment="Top" Width="18" Fill="#FF179BCD" MouseLeftButtonDown="two_Click"/>
-        <Rectangle HorizontalAlignment="Left" Height="44" Margin="469,252,0,0" Stroke="Black" VerticalAlignment="Top" Width="18" Fill="#FFE4C710"/>
-        <Rectangle HorizontalAlignment="Left" Height="44" Margin="486,252,0,0" Stroke="Black" VerticalAlignment="Top" Width="18" Fill="#FF3BC91C"/>
+        <Rectangle HorizontalAlignment="Left" Height="44" Margin="469,252,0,0" Stroke="Black" VerticalAlignment="Top" Width="18" Fill="#FFE4C710" MouseLeftButtonDown="three_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="44" Margin="486,252,0,0" Stroke="Black" VerticalAlignment="Top" Width="18" Fill="#FF3BC91C" MouseLeftButtonDown="four_Click"/>
         <TextBlock HorizontalAlignment="Left" Height="28" Margin="350,259,0,0" Text="Start" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Margin="458,266,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Height="14" Width="7" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="475,266,0,0" Text="3" TextWrapping="Wrap" VerticalAlignment="Top" Height="14" Width="7" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="492,266,0,0" Text="4" TextWrapping="Wrap" VerticalAlignment="Top" Height="14" Width="7" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="458,266,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Height="14" Width="7" Foreground="White" MouseLeftButtonDown="two_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="475,266,0,0" Text="3" TextWrapping="Wrap" VerticalAlignment="Top" Height="14" Width="7" Foreground="White" MouseLeftButtonDown="three_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="492,266,0,0" Text="4" TextWrapping="Wrap" VerticalAlignment="Top" Height="14" Width="7" Foreground="White" MouseLeftButtonDown="four_Click"/>
 
     </Grid>
 </Page>
