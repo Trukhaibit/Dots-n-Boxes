@@ -18,6 +18,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="458,266,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Height="14" Width="7" Foreground="White" MouseLeftButtonDown="two_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="475,266,0,0" Text="3" TextWrapping="Wrap" VerticalAlignment="Top" Height="14" Width="7" Foreground="White" MouseLeftButtonDown="three_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="492,266,0,0" Text="4" TextWrapping="Wrap" VerticalAlignment="Top" Height="14" Width="7" Foreground="White" MouseLeftButtonDown="four_Click"/>
+        <Rectangle x:Name="options" HorizontalAlignment="Left" Height="44" Margin="292,296,0,0" Stroke="Black" VerticalAlignment="Top" Width="212" MouseLeftButtonDown="options_Click" Fill="White"/>
+        <TextBlock HorizontalAlignment="Center" Height="28" Margin="0,303,0,0" Text="Options" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontSize="22"/>
 
     </Grid>
 </Page>

@@ -6,4 +6,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="crown.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="crown.png" />
+  </ItemGroup>
+
 </Project>

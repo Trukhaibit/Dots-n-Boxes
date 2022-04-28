@@ -8,32 +8,34 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\James\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\olszew3\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\James\\OneDrive\\all\\Desktop\\Dots-n-Boxes-main\\Dots-n-Boxes-main\\dotsnboxes\\dotsnboxes\\dotsnboxes.csproj",
+      "projectUniqueName": "C:\\Users\\olszew3\\Desktop\\Dots-n-Boxes-main (1)\\Dots-n-Boxes-main\\dotsnboxes\\dotsnboxes\\dotsnboxes.csproj",
       "projectName": "dotsnboxes",
-      "projectPath": "C:\\Users\\James\\OneDrive\\all\\Desktop\\Dots-n-Boxes-main\\Dots-n-Boxes-main\\dotsnboxes\\dotsnboxes\\dotsnboxes.csproj",
-      "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\James\\OneDrive\\all\\Desktop\\Dots-n-Boxes-main\\Dots-n-Boxes-main\\dotsnboxes\\dotsnboxes\\obj\\",
+      "projectPath": "C:\\Users\\olszew3\\Desktop\\Dots-n-Boxes-main (1)\\Dots-n-Boxes-main\\dotsnboxes\\dotsnboxes\\dotsnboxes.csproj",
+      "packagesPath": "C:\\Users\\olszew3\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\olszew3\\Desktop\\Dots-n-Boxes-main (1)\\Dots-n-Boxes-main\\dotsnboxes\\dotsnboxes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\olszew3\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -68,7 +70,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

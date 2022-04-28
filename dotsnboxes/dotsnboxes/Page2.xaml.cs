@@ -19,7 +19,6 @@ namespace dotsnboxes
     public partial class Page2 : Page
     {
         int turn = 1;
-        int counter = 0;
         int inplay = 0;
         int rScore = 0;
         int bScore = 0;
@@ -31,14 +30,28 @@ namespace dotsnboxes
             InitializeComponent();
             inplay = players;
             text.Text = inplay.ToString();
+            box_Place();
+        }
+
+        public void box_Place()
+        {
+            if (inplay == 2)
+            {
+                redScore.RenderTransform = new TranslateTransform(60, 0);
+                blueScore.RenderTransform = new TranslateTransform(185, 0);
+                goldScore.RenderTransform = new TranslateTransform(500, 0);
+                limeScore.RenderTransform = new TranslateTransform(500, 0);
+            }
+            else if (inplay == 3)
+            {
+                blueScore.RenderTransform = new TranslateTransform(60, 0);
+                goldScore.RenderTransform = new TranslateTransform(120, 0);
+                limeScore.RenderTransform = new TranslateTransform(500, 0);
+            }
         }
 
         public void turn_Change()
         {
-            if (turn == 0)
-            {
-                turn = inplay;
-            }
             if (turn == 1)
             {
                 color = Brushes.Crimson;
@@ -72,12 +85,16 @@ namespace dotsnboxes
             Rectangle line = e.Source as Rectangle;
             line.Fill = color;
             check_Boxes();
+            if(rScore + bScore + gScore + lScore == 40)
+            {
+                this.NavigationService.Navigate(new Page3(rScore, bScore, gScore, lScore, inplay));
+            }
         }
 
         public void check_Boxes()
         {
-            int[] boxes = { 22, 24, 26 };
-
+            int[] boxes = {22,24,26,28,30,32,34,36,38,40,64,66,68,70,72,74,76,78,80,82,106,108,110,112,114,116,118,120,122,124,148,150,152,154,156,158,160,162,164,166};
+            int turnMem = turn - 1;
             foreach(int b in boxes)
             {
                 Rectangle top = (Rectangle)FindName("_" + (b - 21));
@@ -89,7 +106,11 @@ namespace dotsnboxes
                 if (top.Fill != Brushes.White && left.Fill != Brushes.White && right.Fill != Brushes.White && bottom.Fill != Brushes.White && box.Fill == Brushes.White)
                 {
                     box.Fill = color;
-                    turn -= 1;
+                    turn = turnMem;
+                    if (turn == 0)
+                    {
+                        turn = inplay;
+                    }
                     if (turn == 1)
                     {
                         rScore += 1;
